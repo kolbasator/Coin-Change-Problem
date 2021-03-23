@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "nEsQv0Xt6ITYf2+UxVshsiCwBfqCygWqZsih0rWn+Ml+oUK2gzs50eSDeB/+1kSRr85xLLhnNQvTQ+WsKzZl6w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\777\\Desktop\\Projects\\CoinChangeProblem\\Task3\\Task1\\Task1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\777\\.nuget\\packages\\fluentassertions\\5.10.3\\fluentassertions.5.10.3.nupkg.sha512",
+    "C:\\Users\\777\\.nuget\\packages\\system.configuration.configurationmanager\\4.4.0\\system.configuration.configurationmanager.4.4.0.nupkg.sha512",
+    "C:\\Users\\777\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.4.0\\system.security.cryptography.protecteddata.4.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
