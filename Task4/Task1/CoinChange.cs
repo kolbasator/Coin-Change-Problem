@@ -8,11 +8,8 @@ namespace Task1
 {
     public class CoinChange
     {
-        private static int[] _nominals = new int[] { 1, 2, 5, 10, 20, 50, 100 };
-        private static int _nominalsCount = _nominals.Length;
         public string GreedlyAlgorithm(int x, int[] nominals)
         {
-            var oldNominals = _nominals;
             for (int p = 0; p < nominals.Length; p++)
             {
                 var nominalMatchCount = nominals.Where(x => x == nominals[p]).Count();
@@ -23,36 +20,29 @@ namespace Task1
             }
             if (x < 0)
             {
-                _nominals = oldNominals;
-                _nominalsCount = oldNominals.Length;
                 throw new Exception("Input should be a positive integer");
             }
             if (x == 0)
                 return string.Empty;
-            _nominals = nominals;
-            _nominalsCount = nominals.Length;
             List<int> result = new List<int>();
             string resultString = string.Empty;
-            for (int i = _nominalsCount - 1; i >= 0; i--)
+            for (int i = nominals.Length - 1; i >= 0; i--)
             {
-                while (x >= _nominals[i])
+                while (x >= nominals[i])
                 {
-                    x -= _nominals[i];
-                    result.Add(_nominals[i]);
+                    x -= nominals[i];
+                    result.Add(nominals[i]);
                 }
             }
-            for (int i = _nominalsCount - 1; i >= 0; i--)
+            for (int i = nominals.Length - 1; i >= 0; i--)
             {
-                if (result.Contains(_nominals[i]))
-                    resultString += $"{result.Where(x => x == _nominals[i]).Count()} * {_nominals[i]},";
-            }
-            _nominals = oldNominals;
-            _nominalsCount = oldNominals.Length;
+                if (result.Contains(nominals[i]))
+                    resultString += $"{result.Where(x => x == nominals[i]).Count()} * {nominals[i]},";
+            } 
             return resultString.Remove(resultString.Length - 1); ;
         }
         public string DynamicCoinCange(int change, int[] nominals)
         {
-            var oldNominals = _nominals;
             if (nominals.Distinct().ToArray().Length != nominals.Length)
             {
                 throw new Exception("Coins should have unique values");
@@ -64,14 +54,10 @@ namespace Task1
             }
             if (change < 0)
             {
-                _nominals = oldNominals;
-                _nominalsCount = oldNominals.Length;
                 throw new Exception("Input should be a positive integer");
             }
             if (change == 0)
                 return string.Empty;
-            _nominals = nominals;
-            _nominalsCount = nominals.Length;
             //Формула:
             //                ----- if p == 0 => 0
             //               |
@@ -85,7 +71,7 @@ namespace Task1
             {
                 int count = p;//переменная для минимального количества необходимых монет для текущего числа
                 int newCoin = 0;//переменная для индекса первой монеты для текущего числа
-                foreach (var c in _nominals)
+                foreach (var c in nominals)
                 {
                     if (p == 0) count = 0; //если число равно 0 то количество необходимых монет равно 0
                     if (c <= p)//если номинал монеты меньше или равен текущему числу то идем дальше
@@ -93,7 +79,7 @@ namespace Task1
                         if (1 + minCoins[p - c] < count)//если сумма 1 и минимального количества монет под индексом р-с меньше чем минимальное количество монет для текущей цифры то идем дальше
                         {
                             count = 1 + minCoins[p - c];//минимальное количество монет равно минимальному количеству монет для числа равном текущему числу - номинал текущей монеты
-                            newCoin = Array.IndexOf(_nominals, c);//индекс первой монеты для текущего числа равен индексу данной монеты в массиве монет
+                            newCoin = Array.IndexOf(nominals, c);//индекс первой монеты для текущего числа равен индексу данной монеты в массиве монет
                         }
                     }
                 }
@@ -104,18 +90,16 @@ namespace Task1
             int k = change;
             while (k > 0)
             {
-                var coin = _nominals[firstCoinIndex[k]];
+                var coin =nominals[firstCoinIndex[k]];
                 result.Add(coin);
                 k = k - coin;
             }
             string resultString = string.Empty;
-            for (int i = _nominalsCount - 1; i >= 0; i--)
+            for (int i =nominals.Length - 1; i >= 0; i--)
             {
-                if (result.Contains(_nominals[i]))
-                    resultString += $"{result.Where(x => x == _nominals[i]).Count()} * {_nominals[i]},";
-            }
-            _nominals = oldNominals;
-            _nominalsCount = oldNominals.Length;
+                if (result.Contains(nominals[i]))
+                    resultString += $"{result.Where(x => x == nominals[i]).Count()} * {nominals[i]},";
+            } 
             return resultString.Remove(resultString.Length - 1, 1);
         }
     }

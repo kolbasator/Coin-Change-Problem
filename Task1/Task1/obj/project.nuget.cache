@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jhpKh+WpFON5dhJtZ4ARH5N4Br08XDf2ikh97lOoasKxqQRlWTFfoy4HqXNIN9yDWi2X/oTI40+CIpyT6mUj8w==",
+  "dgSpecHash": "DDp3yq5LIpi+faqpJ0WeRS44fkVBAFcTPgGdRnl/BM2UMAyMKoUQjxNdhBeuqbOBPnp1GjVxdfbxTK4DIDLXmA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\777\\Desktop\\Projects\\CoinChangeProblem\\Task1\\Task1\\Task1.csproj",
+  "projectFilePath": "C:\\Users\\777\\Desktop\\Projects\\Coin-Change-Problem\\Task1\\Task1\\Task1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\777\\.nuget\\packages\\fluentassertions\\5.10.3\\fluentassertions.5.10.3.nupkg.sha512",
     "C:\\Users\\777\\.nuget\\packages\\system.configuration.configurationmanager\\4.4.0\\system.configuration.configurationmanager.4.4.0.nupkg.sha512",

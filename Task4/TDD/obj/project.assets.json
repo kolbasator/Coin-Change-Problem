@@ -4790,11 +4790,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\777\\Desktop\\Projects\\CoinChangeProblem\\Task4\\TDD\\TDD.csproj",
+      "projectUniqueName": "C:\\Users\\777\\Desktop\\Projects\\Coin-Change-Problem\\Task4\\TDD\\TDD.csproj",
       "projectName": "TDD",
-      "projectPath": "C:\\Users\\777\\Desktop\\Projects\\CoinChangeProblem\\Task4\\TDD\\TDD.csproj",
+      "projectPath": "C:\\Users\\777\\Desktop\\Projects\\Coin-Change-Problem\\Task4\\TDD\\TDD.csproj",
       "packagesPath": "C:\\Users\\777\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\777\\Desktop\\Projects\\CoinChangeProblem\\Task4\\TDD\\obj\\",
+      "outputPath": "C:\\Users\\777\\Desktop\\Projects\\Coin-Change-Problem\\Task4\\TDD\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\777\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4810,8 +4810,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\777\\Desktop\\Projects\\CoinChangeProblem\\Task4\\Task1\\Task1.csproj": {
-              "projectPath": "C:\\Users\\777\\Desktop\\Projects\\CoinChangeProblem\\Task4\\Task1\\Task1.csproj"
+            "C:\\Users\\777\\Desktop\\Projects\\Coin-Change-Problem\\Task4\\Task1\\Task1.csproj": {
+              "projectPath": "C:\\Users\\777\\Desktop\\Projects\\Coin-Change-Problem\\Task4\\Task1\\Task1.csproj"
             }
           }
         }

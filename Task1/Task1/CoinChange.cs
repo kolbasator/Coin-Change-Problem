@@ -7,29 +7,28 @@ namespace Task1
 {
     public class CoinChange
     {
-        private static int[] _nominals = new int[] { 1, 2, 5, 10, 20, 50, 100 };
-        private static int _nominalsCount = _nominals.Length;
         public string GreedlyAlgorithm(int x)
         {
+            int[] nominals = new int[] { 1, 2, 5, 10, 20, 50, 100 };
             if (x == 0)
                 return string.Empty;
             List<int> result = new List<int>();
             string resultString = string.Empty;
-            for (int i = _nominalsCount - 1; i >= 0; i--)
+            for (int i = nominals.Length - 1; i >= 0; i--)
             {
-                while (x >= _nominals[i])
+                while (x >= nominals[i])
                 {
-                    x -= _nominals[i];
-                    result.Add(_nominals[i]);
+                    x -= nominals[i];
+                    result.Add(nominals[i]);
                 }
             }
-            for (int i = _nominalsCount - 1; i >= 0; i--)
+            for (int i = nominals.Length - 1; i >= 0; i--)
             {
-                if (result.Contains(_nominals[i]))
+                if (result.Contains(nominals[i]))
                 {
-                    resultString += $"{result.Where(x => x == _nominals[i]).Count()} * {_nominals[i]},";
+                    resultString += $"{result.Where(x => x == nominals[i]).Count()} * {nominals[i]},";
                 }
-            } 
+            }
             return resultString.Remove(resultString.Length - 1); ;
         }
     }

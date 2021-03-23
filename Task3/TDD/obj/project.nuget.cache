@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y0WFZ3q9ItWg/uzui49MxDjvqEL6bCCwgmK+FVBZjOLFXiEcdhtuX0UvGiKJEL0XhHnxKPJDzREQ2RreQEcC5w==",
+  "dgSpecHash": "NIQV8SIEPMEIGd9UkVNT9Q9TkwafjAJnYzJO5Qe3TbBW0XUYV2sMHQOGcfLxzBAFZlh6njYsafoCE8JdOGzohA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\777\\Desktop\\Projects\\CoinChangeProblem\\Task3\\TDD\\TDD.csproj",
+  "projectFilePath": "C:\\Users\\777\\Desktop\\Projects\\Coin-Change-Problem\\Task3\\TDD\\TDD.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\777\\.nuget\\packages\\fluentassertions\\5.10.3\\fluentassertions.5.10.3.nupkg.sha512",
     "C:\\Users\\777\\.nuget\\packages\\microsoft.codecoverage\\16.4.0\\microsoft.codecoverage.16.4.0.nupkg.sha512",

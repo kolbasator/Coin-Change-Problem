@@ -154,11 +154,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\777\\Desktop\\Projects\\CoinChangeProblem\\Task1\\Task1\\Task1.csproj",
+      "projectUniqueName": "C:\\Users\\777\\Desktop\\Projects\\Coin-Change-Problem\\Task1\\Task1\\Task1.csproj",
       "projectName": "Task1",
-      "projectPath": "C:\\Users\\777\\Desktop\\Projects\\CoinChangeProblem\\Task1\\Task1\\Task1.csproj",
+      "projectPath": "C:\\Users\\777\\Desktop\\Projects\\Coin-Change-Problem\\Task1\\Task1\\Task1.csproj",
       "packagesPath": "C:\\Users\\777\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\777\\Desktop\\Projects\\CoinChangeProblem\\Task1\\Task1\\obj\\",
+      "outputPath": "C:\\Users\\777\\Desktop\\Projects\\Coin-Change-Problem\\Task1\\Task1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\777\\AppData\\Roaming\\NuGet\\NuGet.Config",
